@@ -1,5 +1,5 @@
 # Bezier-curve 2d Java
-My nickname - Di using Bezier curve.
+My nickname - Di, using Bezier curve.
 # Start with sketch (check points)
 ![przed](https://user-images.githubusercontent.com/72127610/112198008-f9994600-8c0c-11eb-87c2-bfc2519da0b1.jpg)
 source: https://www.victoriakirst.com/beziertool/
