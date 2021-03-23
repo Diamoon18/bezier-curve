@@ -16,16 +16,16 @@ public class Board extends JPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 	double x[][] = new double[26][4];
-    double y[][] = new double[26][4];
-    double px;
-    double py;
+    	double y[][] = new double[26][4];
+    	double px;
+    	double py;
 	
 	@Override
-    public void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        setValues();
-        drawBeziere(g);
-    }
+   	 public void paintComponent(Graphics g) {
+        	super.paintComponent(g);
+        	setValues();
+        	drawBeziere(g);
+    	}
 	
 	 public void setValues(){
 		 x[0][0] = 157;
