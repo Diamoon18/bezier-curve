@@ -81,7 +81,8 @@ g2d.setBackground(Color.BLACK);
 g2d.fillRect(0, 0, 900, 600);
 g2d.setColor(Color.CYAN);
 ```
-We go through all coordinates x, y and by the formula for 3rd-degree curves, we find auxiliary points. 
+We go through all coordinates x, y and by the formula for 3rd-degree curves, we find auxiliary points.\
+Draw a line for the resulting coordinates.
 ```java
     for(int i = 0; i < 26; i++) {
         for(double t = 0.0; t <= 1.0; t+=0.005) {
@@ -91,6 +92,5 @@ We go through all coordinates x, y and by the formula for 3rd-degree curves, we 
          }
     }
 ```
-
 # Result:
 ![wynik](https://user-images.githubusercontent.com/72127610/112197541-7d9efe00-8c0c-11eb-8ef1-c90d2ac6b4ec.jpg)
