@@ -81,14 +81,14 @@ g2d.setBackground(Color.BLACK);
 g2d.fillRect(0, 0, 900, 600);
 g2d.setColor(Color.CYAN);
 ```
-
+We go through all coordinates x, y and by the formula for 3rd-degree curves, we find auxiliary points. 
 ```java
     for(int i = 0; i < 26; i++) {
-        	for(double t = 0.0; t <= 1.0; t+=0.005) {
-            	px = Math.pow(1-t, 3)*x[i][0] + 3*t*Math.pow(1-t, 2)*x[i][1] + 3*t*t*Math.pow(1-t, 1)*x[i][2] + Math.pow(t, 3) * x[i][3];
-            	py = Math.pow(1-t, 3)*y[i][0] + 3*t*Math.pow(1-t, 2)*y[i][1] + 3*t*t*Math.pow(1-t, 1)*y[i][2] + Math.pow(t, 3) * y[i][3];
+        for(double t = 0.0; t <= 1.0; t+=0.005) {
+            	px = Math.pow(1-t, 3)*x[i][0] + 3*t*Math.pow(1-t, 2)*x[i][1] + 3*Math.pow(t, 2)*(1-t)*x[i][2] + Math.pow(t, 3) * x[i][3];
+            	py = Math.pow(1-t, 3)*y[i][0] + 3*t*Math.pow(1-t, 2)*y[i][1] + 3*Math.pow(t, 2)*(1-t)*y[i][2] + Math.pow(t, 3) * y[i][3];
             	g2d.drawLine((int)px, (int)py, (int)px, (int)py);
-           }
+         }
     }
 ```
 
