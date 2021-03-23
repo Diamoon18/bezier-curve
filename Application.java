@@ -8,8 +8,8 @@ public class Application extends JFrame {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
-	public final int WIDTH = 650, HEIGHT = 500;
+    private static final long serialVersionUID = 1L;
+    public final int WIDTH = 650, HEIGHT = 500;
     
     public Application() {
     	initUI();
